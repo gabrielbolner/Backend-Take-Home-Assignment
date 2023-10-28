@@ -64,16 +64,16 @@ public class ProService {
             throw new IllegalArgumentException("Pro is under the age limit");
         }
 
-        score += "high_school".equals(proRequest.getEducationLevel()) ? 1 : ("bachelors_degree_or_high".equals(proRequest.getEducationLevel()) ? 2 : 0);
+        score += "high_school".equals(proRequest.getEducation_level()) ? 1 : ("bachelors_degree_or_high".equals(proRequest.getEducation_level()) ? 2 : 0);
 
-        score += proRequest.getPastExperiences().isSales() ? 5 : 0;
-        score += proRequest.getPastExperiences().isSupport() ? 3 : 0;
+        score += proRequest.getPast_experiences().isSales() ? 5 : 0;
+        score += proRequest.getPast_experiences().isSupport() ? 3 : 0;
 
-        score += mapSpeedToScore(proRequest.getInternetTest().getDownloadSpeed() + mapSpeedToScore(proRequest.getInternetTest().getUploadSpeed()));
+        score += mapSpeedToScore(proRequest.getInternet_test().getDownloadSpeed() + mapSpeedToScore(proRequest.getInternet_test().getUploadSpeed()));
 
-        score += mapWritingScoreToScore(proRequest.getWritingScore());
+        score += mapWritingScoreToScore(proRequest.getWriting_score());
 
-        score += "token1234".equals(proRequest.getReferralCode()) ? 1 : 0;
+        score += "token1234".equals(proRequest.getReferral_code()) ? 1 : 0;
 
         return score;
     }

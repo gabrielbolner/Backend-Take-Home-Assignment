@@ -9,9 +9,9 @@ import lombok.Setter;
 @Setter
 public class ProRequest {
     private int age;
-    private String educationLevel;
-    private PastExperiences pastExperiences;
-    private InternetTest internetTest;
-    private Float writingScore;
-    private String referralCode;
+    private String education_level;
+    private PastExperiences past_experiences;
+    private InternetTest internet_test;
+    private Float writing_score;
+    private String referral_code;
 }

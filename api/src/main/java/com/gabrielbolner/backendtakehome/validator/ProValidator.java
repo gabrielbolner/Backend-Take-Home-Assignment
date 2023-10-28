@@ -20,26 +20,26 @@ public class ProValidator {
             throw new IllegalArgumentException(INVALID_AGE);
         }
 
-        String educationLevel = proRequest.getEducationLevel();
-        if (!"no_education".equals(educationLevel) && !"high_school".equals(educationLevel) && !"bachelors_degree_or_high".equals(educationLevel)) {
+        String education_level = proRequest.getEducation_level();
+        if (!"no_education".equals(education_level) && !"high_school".equals(education_level) && !"bachelors_degree_or_high".equals(education_level)) {
             throw new IllegalArgumentException(INVALID_EDUCATION);
         }
 
-        if (proRequest.getPastExperiences() == null) {
+        if (proRequest.getPast_experiences() == null) {
             throw new IllegalArgumentException(INVALID_PAST_EXPERIENCES);
         }
 
-        if (proRequest.getInternetTest() == null) {
+        if (proRequest.getInternet_test() == null) {
             throw new IllegalArgumentException(INVALID_INTERNET_TEST);
         }
 
-        float writingScore = proRequest.getWritingScore();
-        if (writingScore < 0 || writingScore > 1) {
+        float writing_score = proRequest.getWriting_score();
+        if (writing_score < 0 || writing_score > 1) {
             throw new IllegalArgumentException(INVALID_WRITING_SCORE);
         }
 
-        String referralCode = proRequest.getReferralCode();
-        if (referralCode != null && !referralCode.equals("token1234")) {
+        String referral_code = proRequest.getReferral_code();
+        if (referral_code != null && !referral_code.equals("token1234")) {
             throw new IllegalArgumentException(INVALID_REFERRAL_CODE);
         }
     }
