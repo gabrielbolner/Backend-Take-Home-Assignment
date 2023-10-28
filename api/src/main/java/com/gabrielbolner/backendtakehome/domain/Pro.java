@@ -9,9 +9,9 @@ import java.util.Map;
 @Setter
 public class Pro {
     private int age;
-    private String educationLevel;
-    private Map<String, Boolean> pastExperiences;
-    private Map<String, Double> internetTest;
-    private double writingScore;
-    private String referralCode;
+    private String education_level;
+    private Map<String, Boolean> past_experiences;
+    private Map<String, Float> internet_test;
+    private Float writing_score;
+    private String referral_code;
 }
