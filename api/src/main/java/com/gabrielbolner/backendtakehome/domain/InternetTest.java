@@ -6,6 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class InternetTest {
-    private Float downloadSpeed;
-    private Float uploadSpeed;
+    private Float download_speed;
+    private Float upload_speed;
 }

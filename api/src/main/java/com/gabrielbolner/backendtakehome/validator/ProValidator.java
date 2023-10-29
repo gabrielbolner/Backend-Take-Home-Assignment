@@ -13,8 +13,7 @@ public class ProValidator {
     public static final String INVALID_WRITING_SCORE = "Writing score must be between 0 and 1.";
     public static final String INVALID_REFERRAL_CODE = "Invalid referral code.";
 
-    public void validate(Object target) {
-        ProRequest proRequest = (ProRequest) target;
+    public void validate(ProRequest proRequest) {
 
         if (proRequest.getAge() < 0) {
             throw new IllegalArgumentException(INVALID_AGE);

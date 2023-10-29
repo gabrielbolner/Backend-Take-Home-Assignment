@@ -1,16 +1,12 @@
 package com.gabrielbolner.backendtakehome.controller.response;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
+@Builder
 public class ProResponse {
     private Float score;
     private String selected_project;
