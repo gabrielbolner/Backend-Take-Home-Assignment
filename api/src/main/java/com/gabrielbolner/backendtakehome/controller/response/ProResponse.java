@@ -1,6 +1,8 @@
 package com.gabrielbolner.backendtakehome.controller.response;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 

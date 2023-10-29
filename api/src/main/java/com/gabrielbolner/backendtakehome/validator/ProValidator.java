@@ -38,7 +38,7 @@ public class ProValidator {
         }
 
         String referral_code = proRequest.getReferral_code();
-        if (referral_code != null && !referral_code.equals("token1234")) {
+        if (referral_code == null ) {
             throw new IllegalArgumentException(INVALID_REFERRAL_CODE);
         }
     }

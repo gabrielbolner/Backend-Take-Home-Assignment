@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "8783e17b-b8d6-46fa-a18c-0414e71739fd",
+		"name": "Backend-Take-Home",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29096661"
+	},
+	"item": [
+		{
+			"name": "Pro Application",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"age\": 35,\r\n  \"education_level\": \"high_school\",\r\n  \"past_experiences\": {\r\n    \"sales\": false,\r\n    \"support\": true\r\n  },\r\n  \"internet_test\": {\r\n    \"download_speed\": 50.4,\r\n    \"upload_speed\": 40.2\r\n  },\r\n  \"writing_score\": 0.6,\r\n  \"referral_code\": \"token1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pros/apply",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pros",
+						"apply"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

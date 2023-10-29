@@ -1,6 +1,7 @@
 package com.gabrielbolner.backendtakehome.domain;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 @Setter
