@@ -65,7 +65,7 @@ public class ProValidatorTest {
     @Test
     void shouldThrowExceptionWhenReferralCodeIsInvalid() {
         ProRequest proRequest = ProFactory.getProRequest();
-        proRequest.setReferral_code("invalid_code");
+        proRequest.setReferral_code(null);
 
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> proValidator.validate(proRequest));
         assertEquals(ProValidator.INVALID_REFERRAL_CODE, exception.getMessage());

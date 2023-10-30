@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"age\": 35,\r\n  \"education_level\": \"high_school\",\r\n  \"past_experiences\": {\r\n    \"sales\": false,\r\n    \"support\": true\r\n  },\r\n  \"internet_test\": {\r\n    \"download_speed\": 50.4,\r\n    \"upload_speed\": 40.2\r\n  },\r\n  \"writing_score\": 0.6,\r\n  \"referral_code\": \"token1234\"\r\n}",
+					"raw": "{\r\n    \"age\": 35,\r\n    \"education_level\": \"bachelors_degree_or_high\",\r\n    \"past_experiences\": {\r\n        \"sales\": false,\r\n        \"support\": true\r\n    },\r\n    \"internet_test\": {\r\n        \"download_speed\": 50.4,\r\n        \"upload_speed\": 40.2\r\n    },\r\n    \"writing_score\": 0.6,\r\n    \"referral_code\": \"tokaen1234\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
