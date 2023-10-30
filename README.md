@@ -3,15 +3,6 @@
 
 ## Instructions to Run the Code
 
-### Using Docker Hub (Recommended)
-
-If you have Docker installed and prefer to use the pre-built Docker image from Docker Hub, simply run the following command in a terminal window:
-
-```bash
-sudo docker run -p 8080:8080 gabrielbgarcia/backend-take-home:latest
-```
-The API should now be up and running at http://localhost:8080.
-
 ### Building and Running from Scratch ( if you have docker )
 
 1. Clone this repository, open a terminal and navigate to the 'api' directory:
